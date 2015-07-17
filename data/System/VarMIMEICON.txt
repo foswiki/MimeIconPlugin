@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="reprev" date="1290097184" format="1.1" reprev="1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1437155075" format="1.1"  version="1"}%
 %META:TOPICPARENT{name="MimeIconPlugin"}%
 #VarMIMEICON
 ---+++ MIMEICON{"filename"} -- return a meaningful icon for this filename
