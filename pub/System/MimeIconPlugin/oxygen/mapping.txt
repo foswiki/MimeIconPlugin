@@ -25,6 +25,7 @@ xlt=application-vnd.ms-excel.png
 xlb=application-vnd.ms-excel.png
 ppt=application-vnd.ms-powerpoint.png
 pps=application-vnd.ms-powerpoint.png
+vsd=application-vnd.ms-access.png
 
 # opendocument
 odc=application-vnd.oasis.opendocument.chart.png

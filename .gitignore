@@ -1,9 +1,9 @@
 *.swp
 *.gz
-MimeIconPlugin.md5
-MimeIconPlugin.sha1
-MimeIconPlugin.tgz
-MimeIconPlugin.txt
-MimeIconPlugin.zip
-MimeIconPlugin_installer
-MimeIconPlugin_installer.pl
+/MimeIconPlugin.md5
+/MimeIconPlugin.sha1
+/MimeIconPlugin.tgz
+/MimeIconPlugin.txt
+/MimeIconPlugin.zip
+/MimeIconPlugin_installer
+/MimeIconPlugin_installer.pl

@@ -1,6 +1,6 @@
 %META:TOPICINFO{author="ProjectContributor" comment="" date="1437155075" format="1.1"  version="1"}%
 ---+!! %TOPIC%
-%SHORTDESCRIPTION%
+%FORMFIELD{"Description"}%
 
 %TOC%
 
@@ -49,25 +49,26 @@ file extension is totally unknown.
 <img src="%ATTACHURLPATH%/MimeIconPluginSnap1.png" /> 
 
 ---++ Installation Instructions
-
 %$INSTALL_INSTRUCTIONS%
 
----++ Info
-<!--
-   * Set SHORTDESCRIPTION = Icon sets for mimetypes
--->
-|  Author(s): | Michael Daum |
-|  Copyright: | &copy; 2010-2015 Michael Daum http://michaeldaumconsulting.com |
-|  License: | [[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]] |
-|  Release: | %$RELEASE% |
-|  Version: | %$VERSION% |
-|  Change History: | <!-- versions below in reverse order -->&nbsp; |
+---++ Dependencies
+%$DEPENDENCIES%
+
+---++ Change History
+|  09 Sep 2016: | (1.31) added vsd to image mapping |
 |  17 Jul 2015: | (1.30) added support for google file formats webp, weba, webm |
 |  22 May 2013: | (1.20) only ship icons covered by a mapping |
 |  16 Dec 2011: | (1.10) fixed mapping in oxygen icon set; fix to make sure the icon mapping is read in properly |
-|  Dependencies: | %$DEPENDENCIES% |
-|  Home page: | Foswiki:Extensions/%TOPIC% |
-|  Support: | Foswiki:Support/%TOPIC% |
 
 %META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1437155075" size="41588" user="ProjectContributor" version="1"}%
 %META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1437155075" moveby="micha" movedto="System.MimeIconPlugin.MimeIconPluginSnap1.png" movedwhen="1369210422" movefrom="System.MimeIconPlugin.MimeIconPluginSnap3.png" size="18836" user="ProjectContributor" version="1"}%
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="Author" title="Author" value="Michael Daum"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2016 Michael Daum http://michaeldaumconsulting.com"}%
+%META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
+%META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%TOPIC%"}%
+%META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
+%META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%TOPIC%"}%
+%META:FIELD{name="Support" title="Support" value="Foswiki:Support/%TOPIC%"}%
+%META:FIELD{name="Version" title="Version" value="%$VERSION%"}%
