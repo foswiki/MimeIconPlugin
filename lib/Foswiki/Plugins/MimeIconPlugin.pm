@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# MimeIconPlugin is Copyright (C) 2010-2016 Michael Daum http://michaeldaumconsulting.com
+# MimeIconPlugin is Copyright (C) 2010-2017 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -26,8 +26,8 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '1.31';
-our $RELEASE = '09 Sep 2016';
+our $VERSION = '2.00';
+our $RELEASE = '30 Aug 2017';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
 our $NO_PREFS_IN_TOPIC = 1;
 our $baseWeb;
@@ -45,7 +45,48 @@ sub initPlugin {
 
   Foswiki::Func::registerTagHandler('MIMEICON', \&MIMEICON);
 
+  Foswiki::Func::registerRESTHandler(
+    'get',
+    \&handleREST,
+    authenticate => 0,
+    validate => 0,
+    http_allow => 'GET,POST',
+  );
+
+
   return 1;
+}
+
+=begin TML
+
+--++ handleREST
+
+returns the url to a mime icon
+
+=cut
+
+sub handleREST {
+  my ($subject, $verb, $response) = @_;
+
+  my $query = Foswiki::Func::getCgiQuery();
+  my $file = $query->param("file") || '';
+
+  $file =~ s/^.*\.//;
+  $file =~ s/^\s+|\s+$//g;
+
+  my $size = $query->param("size") || '48';
+  my $theme = $query->param("theme");
+
+  $theme = $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'oxygen'
+    unless defined $theme;
+
+  $size = getBestSize($theme, $size);
+
+  my (undef, $iconPath) = getIcon($file, $theme, $size); 
+
+  Foswiki::Func::redirectCgiQuery($query, $iconPath);
+
+  return "";
 }
 
 =begin TML
@@ -71,8 +112,7 @@ sub MIMEICON {
     unless defined $theme;
 
   $extension =~ s/^.*\.//;
-  $extension =~ s/^\s+//;
-  $extension =~ s/\s+$//;
+  $extension =~ s/^\s+|\s+$//g;
 
   $size = getBestSize($theme, $size);
   my ($iconName, $iconPath) = getIcon($extension, $theme, $size); 

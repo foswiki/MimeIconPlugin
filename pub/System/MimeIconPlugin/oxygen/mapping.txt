@@ -2,6 +2,7 @@ sizes=16, 22, 32, 48, 64, 128, 256
 
 ill=application-illustrator.png
 js=application-javascript.png
+json=application-javascript.png
 doc=application-msword.png
 dot=application-msword.png
 bin=application-octet-stream.png
@@ -264,6 +265,7 @@ txt=text-plain.png
 text=text-plain.png
 rdf=text-rdf.png
 rtf=text-rtf.png
+sass=text-css.png
 sglm=text-sgml.png
 troff=text-troff.png
 vcs=text-vcalendar.png
