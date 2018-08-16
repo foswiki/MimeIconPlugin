@@ -77,6 +77,8 @@ redirects to
 %$DEPENDENCIES%
 
 ---++ Change History
+%TABLE{columnwidths="7em" tablewidth="100%"}%
+|  16 Aug 2018: | (2.01) disabled error message writing to stderr |
 |  30 Aug 2017: | (2.00) added =get= REST handler |
 |  09 Sep 2016: | (1.31) added vsd to image mapping |
 |  17 Jul 2015: | (1.30) added support for google file formats webp, weba, webm |
@@ -87,7 +89,7 @@ redirects to
 %META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1437155075" moveby="micha" movedto="System.MimeIconPlugin.MimeIconPluginSnap1.png" movedwhen="1369210422" movefrom="System.MimeIconPlugin.MimeIconPluginSnap3.png" size="18836" user="ProjectContributor" version="1"}%
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
-%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2017 Michael Daum http://michaeldaumconsulting.com"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2018 Michael Daum http://michaeldaumconsulting.com"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%TOPIC%"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
