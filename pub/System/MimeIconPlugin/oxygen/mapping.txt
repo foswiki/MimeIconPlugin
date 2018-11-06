@@ -18,6 +18,10 @@ rss=application-rss+xml.png
 atom=application-rss+xml.png
 rtf=application-rtf.png
 
+# e-books
+epub=application-epub+zip.png
+mobi=application-epub+zip.png
+
 # ms-office
 sxw=application-sxw.png
 mdb=application-vnd.ms-access.png
@@ -182,7 +186,7 @@ ogg=audio-x-flac+ogg.png
 oga=audio-x-flac+ogg.png
 flac=audio-x-flac.png
 # =audio-x-generic.png
-au=audio-x-generic.pngg 
+au=audio-x-generic.png
 snd=audio-x-generic.png
 awb=audio-x-generic.png
 axa=audio-x-generic.png

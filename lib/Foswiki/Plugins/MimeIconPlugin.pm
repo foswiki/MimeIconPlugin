@@ -26,8 +26,8 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '2.01';
-our $RELEASE = '16 Aug 2018';
+our $VERSION = '3.00';
+our $RELEASE = '06 Nov 2018';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
 our $NO_PREFS_IN_TOPIC = 1;
 our $baseWeb;
@@ -84,6 +84,7 @@ sub handleREST {
 
   my (undef, $iconPath) = getIcon($file, $theme, $size); 
 
+  $response->header(-cache_control => "max-age=".(8 * 60 * 60)); # 8 hours in seconds
   Foswiki::Func::redirectCgiQuery($query, $iconPath);
 
   return "";
@@ -114,8 +115,10 @@ sub MIMEICON {
   $extension =~ s/^.*\.//;
   $extension =~ s/^\s+|\s+$//g;
 
-  $size = getBestSize($theme, $size);
-  my ($iconName, $iconPath) = getIcon($extension, $theme, $size); 
+  my $bestSize = getBestSize($theme, $size);
+  my ($iconName, $iconPath) = getIcon($extension, $theme, $bestSize); 
+
+  $size = $cache{$theme.':scalable'}?$size:$bestSize;
 
   return "<span class='foswikiAlert'>Error: can't even find a fallback mime-icon</span>"
     unless defined $iconName;
@@ -275,14 +278,17 @@ sub readIconMapping {
 
   foreach my $line (<$IN_FILE>) {
     $line =~ s/#.*$//;
-    $line =~ s/^\s+//;
-    $line =~ s/\s+$//;
+    $line =~ s/^\s+|\s+$//g;
     next if $line =~ /^$/;
 
     if ($line =~ /^(.*?)\s*=\s*(.*?)$/) {
       my $key = $1;
       my $val = $2;
-      if ($key eq 'sizes') {
+
+
+      if ($key eq 'scalable') {
+        $cache{$theme.':scalable'} = Foswiki::Func::isTrue($val);
+      } elsif ($key eq 'sizes') {
         $cache{$theme.':sizes'} = [ reverse split(/\s*,\s*/, $val)];
       } else {
         $cache{$theme.':'.$key} = $val;

@@ -1,0 +1,244 @@
+sizes=16, 22, 24, 32, 48, 64
+scalable=true
+
+dxf=application-dxf.svg
+json=application-json.svg
+pdf=application-pdf.svg
+pgp=application-pgp-encrypted.svg
+# application-pgp-keys.svg
+cert=application-pkix-cert.svg
+cer=application-pkix-cert.svg
+pkg=application-vnd.android.package-archive.svg
+# application-vnd.comicbook+zip.svg
+flatpack=application-vnd.flatpak.svg
+# application-vnd.google-apps.drawing.svg
+# application-vnd.google-apps.form.svg
+# application-vnd.google-apps.fusiontable.svg
+# application-vnd.google-apps.script.svg
+odb=application-vnd.oasis.opendocument.database.svg
+odf=application-vnd.oasis.opendocument.formula.svg
+odg=application-vnd.oasis.opendocument.graphics.svg
+# application-vnd.wolfram.cdf.svg
+# application-vnd.wolfram.mathematica.package.svg
+# application-vnd.wolfram.nb.svg
+# application-x-bittorrent.svg
+# application-x-blender.svg
+# application-x-codeblocks.svg
+# application-x-codeblocks-workspace.svg
+
+7z=application-x-compress.svg
+bz2=application-x-compress.svg
+gz=application-x-compress.svg
+rar=application-x-compress.svg
+tar=application-x-compress.svg
+tgz=application-x-compress.svg
+zip=application-x-compress.svg
+
+# application-x-designer.svg
+dwg=application-x-dwg.svg
+epub=application-x-fictionbook.svg
+mobi=application-x-fictionbook.svg
+oebps=application-x-fictionbook.svg
+ttf=application-x-font-ttf.svg
+# application-x-fusioncomp.svg
+# application-x-gettext-translation.svg
+# application-x-ipynb+json.svg
+# application-x-iso9660-appimage.svg
+iso=application-x-iso.svg
+js=application-x-javascript.svg
+# application-x-kmymoney.svg
+# application-x-krita.svg
+xml=application-xml.svg
+xsl=application-xml.svg
+exe=application-x-msdos-program.svg
+com=application-x-msdos-program.svg
+html=application-x-mswinurl.svg
+htm=application-x-mswinurl.svg
+# application-x-musescore.svg
+php=application-x-php.svg
+# application-x-plasma.svg
+so=application-x-sharedlib.svg
+swf=application-x-shockwave-flash.svg
+flv=application-x-shockwave-flash.svg
+# application-x-sqlite2.svg
+# application-x-srt.svg
+# application-x-tiled.svg
+# application-x-trash.svg
+# application-x-virtualbox-hdd.svg
+# application-x-virtualbox-ova.svg
+# application-x-virtualbox-ovf.svg
+# application-x-virtualbox-vbox.svg
+# application-x-virtualbox-vdi.svg
+# application-x-virtualbox-vhd.svg
+# application-x-virtualbox-vmdk.svg
+yaml=application-x-yaml.svg
+# application-x-zerosize.svg
+
+ac3=audio-x-generic.svg
+au=audio-x-generic.svg
+awb=audio-x-generic.svg
+axa=audio-x-generic.svg
+flac=audio-x-flac.svg
+gsm=audio-x-generic.svg
+kar=audio-x-generic.svg
+m3u=audio-x-generic.svg
+m4a=audio-x-generic.svg
+mid=audio-x-generic.svg
+midi=audio-x-generic.svg
+mp2=audio-x-generic.svg
+mp3=audio-x-generic.svg
+mpega=audio-x-generic.svg
+mpga=audio-x-generic.svg
+pls=audio-x-generic.svg
+sd2=audio-x-generic.svg
+sid=audio-x-generic.svg
+snd=audio-x-generic.svg
+wav=audio-x-generic.svg
+wax=audio-x-generic.svg
+weba=audio-x-generic.svg
+wma=audio-x-generic.svg
+
+# gnome-mime-application-x-referencer.svg
+svgz=image-svg+xml-compressed.svg
+svg=image-x-svg+xml.svg
+
+art=image-x-generic.svg
+bmp=image-x-generic.svg
+cdr=image-x-generic.svg
+cdt=image-x-generic.svg
+cpt=image-x-generic.svg
+cr2=image-x-generic.svg
+crw=image-x-generic.svg
+djv=image-x-generic.svg
+djvu=image-x-generic.svg
+dng=image-x-generic.svg
+eps=image-x-generic.svg
+erf=image-x-generic.svg
+gif=image-x-generic.svg
+ico=image-x-generic.svg
+ief=image-x-generic.svg
+jng=image-x-generic.svg
+jpeg=image-x-generic.svg
+jpe=image-x-generic.svg
+jpg=image-x-generic.svg
+nef=image-x-generic.svg
+orf=image-x-generic.svg
+pat=image-x-generic.svg
+pbm=image-x-generic.svg
+pcx=image-x-generic.svg
+pgm=image-x-generic.svg
+png=image-x-generic.svg
+ppm=image-x-generic.svg
+psd=image-x-generic.svg
+ras=image-x-generic.svg
+rgb=image-x-generic.svg
+tiff=image-x-generic.svg
+tif=image-x-generic.svg
+wbmp=image-x-generic.svg
+webp=image-x-generic.svg
+xbm=image-x-generic.svg
+xcf=image-x-generic.svg
+xcf=image-x-xcf.svg
+xpm=image-x-generic.svg
+xwd=image-x-generic.svg
+
+# playlist.svg
+# qgis-qgs.svg
+# qgis-qpt.svg
+rpm=rpm.svg
+css=text-css.svg
+r=text-r.svg
+# text-x-authors.svg
+# text-x-changelog.svg
+# text-x-chdr.svg
+# text-x-copying.svg
+# text-x-csharp.svg
+cpp=text-x-c++src.svg
+c=text-x-csrc.svg
+diff=text-x-diff.svg
+txt=text-x-generic.svg
+tmpl=text-x-generic-template.svg
+go=text-x-go.svg
+hs=text-x-haskell.svg
+hex=text-x-hex.svg
+# text-x-install.svg
+java=text-x-java.svg
+class=text-x-java.svg
+log=text-x-log.svg
+lua=text-x-lua.svg
+# text-x-makefile.svg
+# text-x-markdown.svg
+mo=text-x-mo.svg
+nim=text-x-nim.svg
+# text-x-octave.svg
+patch=text-x-patch.svg
+po=text-x-po.svg
+py=text-x-python.svg
+qml=text-x-qml.svg
+readme=text-x-readme.svg
+# text-x-ruby.svg
+# text-x-rust.svg
+# text-x-scala.svg
+# text-x-script.svg
+tex=text-x-tex.svg
+# text-x-wxmathml.svg
+bin=unknown.svg
+
+3gp=video-x-generic.svg
+asf=video-x-generic.svg
+asx=video-x-generic.svg
+avi=video-x-generic.svg
+axv=video-x-generic.svg
+dif=video-x-generic.svg
+dl=video-x-generic.svg
+dv=video-x-generic.svg
+fli=video-x-generic.svg
+flv=video-x-generic.svg
+gl=video-x-generic.svg
+lsf=video-x-generic.svg
+lsx=video-x-generic.svg
+mkv=video-x-generic.svg
+mng=video-x-generic.svg
+movie=video-x-generic.svg
+mov=video-x-generic.svg
+mp4=video-x-generic.svg
+mpeg=video-x-generic.svg
+mpe=video-x-generic.svg
+mpg=video-x-generic.svg
+mpv=video-x-generic.svg
+mxu=video-x-generic.svg
+ogg=video-x-generic.svg
+ogv=video-x-generic.svg
+qt=video-x-generic.svg
+webm=video-x-generic.svg
+wm=video-x-generic.svg
+wmv=video-x-generic.svg
+wmx=video-x-generic.svg
+wvx=video-x-generic.svg
+
+raw=x-content-blank-cd.svg
+ics=x-office-calendar.svg
+icz=x-office-calendar.svg
+
+doc=x-office-document.svg
+docx=x-office-document.svg
+odt=x-office-document.svg
+dot=x-office-document.svg
+rtf=x-office-document.svg
+pttx=x-office-presentation.svg
+pttm=x-office-presentation.svg
+odp=x-office-presentation.svg
+otp=x-office-presentation.svg
+ppt=x-office-presentation.svg
+pptx=x-office-presentation.svg
+ods=x-office-spreadsheet.svg
+ots=x-office-spreadsheet.svg
+xls=x-office-spreadsheet.svg
+xlsx=x-office-spreadsheet.svg
+xltx=x-office-spreadsheet.svg
+csv=x-office-spreadsheet.svg
+
+# xoj.svg
+deb=x-package-repository.svg
+
+unknown=unknown.svg

@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1437155075" format="1.1"  version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1541516230" format="1.1" version="1"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
@@ -9,7 +9,7 @@ There are not many icon sets that have a got coverage of mime types despite look
 yet still coherent, not too exotic so that they can be used with a variety of web designs
 without too much of a problem.
 
-!MimeIconPlugin comes with two complete icon sets, namely =oxygen= and =crystal= provided in 
+!MimeIconPlugin comes with two complete icon sets, namely =oxygen=, =crystal= and =papirus= provided in 
 several sizes.
 
 ---++ Usage
@@ -64,6 +64,9 @@ redirects to
 
 ---++ Examples
 
+---+++ Papirus
+<img src="%ATTACHURLPATH%/MimeIconPluginSnap3.png" /> 
+
 ---+++ Oxygen
 <img src="%ATTACHURLPATH%/MimeIconPluginSnap2.png" /> 
 
@@ -78,6 +81,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  06 Nov 2018: | (3.00) added papirus icon set |
 |  16 Aug 2018: | (2.01) disabled error message writing to stderr |
 |  30 Aug 2017: | (2.00) added =get= REST handler |
 |  09 Sep 2016: | (1.31) added vsd to image mapping |
@@ -85,15 +89,16 @@ redirects to
 |  22 May 2013: | (1.20) only ship icons covered by a mapping |
 |  16 Dec 2011: | (1.10) fixed mapping in oxygen icon set; fix to make sure the icon mapping is read in properly |
 
-%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1437155075" size="41588" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1437155075" moveby="micha" movedto="System.MimeIconPlugin.MimeIconPluginSnap1.png" movedwhen="1369210422" movefrom="System.MimeIconPlugin.MimeIconPluginSnap3.png" size="18836" user="ProjectContributor" version="1"}%
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
 %META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2018 Michael Daum http://michaeldaumconsulting.com"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
-%META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%TOPIC%"}%
+%META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
-%META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
-%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%TOPIC%"}%
-%META:FIELD{name="Support" title="Support" value="Foswiki:Support/%TOPIC%"}%
-%META:FIELD{name="Version" title="Version" value="%$VERSION%"}%
+%META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25TOPIC%25"}%
+%META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
+%META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1541516230" size="41588" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1541516230" size="18836" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1541516230" size="12291" user="ProjectContributor" version="1"}%

@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1437155075" format="1.1"  version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1541516230" format="1.1"  version="1"}%
 %META:TOPICPARENT{name="MimeIconPlugin"}%
 #VarMIMEICON
 ---+++ MIMEICON{"filename"} -- return a meaningful icon for this filename
@@ -7,12 +7,20 @@
      | *Parameter* | *Description* | *Default* |
      | ="filename"= | filenam or file extension to display an icon for | required |
      | =size="..."= | icon size; available sizes are depending on the icon set; common sizes are: 16, 32, 48, 64, 128 | 48; when the size isn't found in the icon set a best fitting size available will be chosen automatically |
-     | =theme="oxygen/crystal"= | name of the icon set to chose from; for now only these two are supported | oxygen or defined in =configure= |
+     | =theme="oxygen,crystal,papirus"= | name of the icon set to chose from; for now only these two are supported | papirus or defined in =configure= |
      | =format="..."= | format string for the img tag returned by this macro; within the format string the variables =%<nop>NAME%=, =%<nop>URL%= and =%<nop>SIZE%= are replaced with the concrete values for the icon being rendered | see =mimeicon.theme.tmpl= | 
 
 *Examples*:
 
-<table>
+<table class="foswikiTable foswikiFullWidth">
+<thead>
+  <tr>
+    <th>Oxygen</th>
+    <th>Crystal</th>
+    <th>Papirus</th>
+  </tr>
+</thead>
+<tbody>
 <tr>
   <td>
     %MIMEICON{"video.avi" size="16" theme="oxygen"}%
@@ -23,6 +31,11 @@
     %MIMEICON{"video.avi" size="16" theme="crystal"}%
     %MIMEICON{"video.avi" size="32" theme="crystal"}%
     %MIMEICON{"video.avi" size="64" theme="crystal"}%
+  </td>
+  <td>
+    %MIMEICON{"video.avi" size="16" theme="papirus"}%
+    %MIMEICON{"video.avi" size="32" theme="papirus"}%
+    %MIMEICON{"video.avi" size="64" theme="papirus"}%
   </td>
 </tr>
 <tr>
@@ -36,6 +49,11 @@
     %MIMEICON{"document.pdf" size="32" theme="crystal"}%
     %MIMEICON{"document.pdf" size="64" theme="crystal"}%
   </td>
+  <td>
+    %MIMEICON{"document.pdf" size="16" theme="papirus"}%
+    %MIMEICON{"document.pdf" size="32" theme="papirus"}%
+    %MIMEICON{"document.pdf" size="64" theme="papirus"}%
+  </td>
 </tr>
 <tr>
   <td>
@@ -47,6 +65,11 @@
     %MIMEICON{"document.txt" size="16" theme="crystal"}%
     %MIMEICON{"document.txt" size="32" theme="crystal"}%
     %MIMEICON{"document.txt" size="64" theme="crystal"}%
+  </td>
+  <td>
+    %MIMEICON{"document.txt" size="16" theme="papirus"}%
+    %MIMEICON{"document.txt" size="32" theme="papirus"}%
+    %MIMEICON{"document.txt" size="64" theme="papirus"}%
   </td>
 </tr>
 <tr>
@@ -60,6 +83,11 @@
     %MIMEICON{"archive.zip" size="32" theme="crystal"}%
     %MIMEICON{"archive.zip" size="64" theme="crystal"}%
   </td>
+  <td>
+    %MIMEICON{"archive.zip" size="16" theme="papirus"}%
+    %MIMEICON{"archive.zip" size="32" theme="papirus"}%
+    %MIMEICON{"archive.zip" size="64" theme="papirus"}%
+  </td>
 </tr>
 <tr>
   <td>
@@ -71,5 +99,12 @@
     %MIMEICON{"soundtrack.mp3" size="16" theme="crystal"}%
     %MIMEICON{"soundtrack.mp3" size="32" theme="crystal"}%
     %MIMEICON{"soundtrack.mp3" size="64" theme="crystal"}%
-  </td></tr>
+  </td>
+  <td>
+    %MIMEICON{"soundtrack.mp3" size="16" theme="papirus"}%
+    %MIMEICON{"soundtrack.mp3" size="32" theme="papirus"}%
+    %MIMEICON{"soundtrack.mp3" size="64" theme="papirus"}%
+  </td>
+</tr>
+</tbody>
 </table>
