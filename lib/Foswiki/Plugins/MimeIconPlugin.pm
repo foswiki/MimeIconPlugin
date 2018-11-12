@@ -26,8 +26,8 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '3.00';
-our $RELEASE = '06 Nov 2018';
+our $VERSION = '3.10';
+our $RELEASE = '12 Nov 2018';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
 our $NO_PREFS_IN_TOPIC = 1;
 our $baseWeb;
@@ -105,12 +105,14 @@ sub MIMEICON {
   my $size = $params->{size} || '48';
   my $theme = $params->{theme};
   my $format = $params->{format};
+  my $class = $params->{class};
 
-  $format = "<img class='foswikiIcon' src='\$url' width='\$size' height='\$size' alt='\$name' />"
+  $format = "<img src='\$url' class='\$class' width='\$size' height='\$size' alt='\$name' />"
     unless defined $format;
 
   $theme = $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'oxygen'
     unless defined $theme;
+
 
   $extension =~ s/^.*\.//;
   $extension =~ s/^\s+|\s+$//g;
@@ -123,11 +125,23 @@ sub MIMEICON {
   return "<span class='foswikiAlert'>Error: can't even find a fallback mime-icon</span>"
     unless defined $iconName;
 
+  my @class = ();
+  push @class, "foswikiIcon";
+  push @class, split(/\s*,\s*/, $class) if defined $class;
+  push @class, $theme;
+
+  my $iconNameClass = $iconName;
+  $iconNameClass =~ s/^(.*)\.(?:.*?)$/$1/;
+
+  push @class, $iconNameClass;
+  $class = join(" ", @class);
+
   # formatting result
   my $result = $format;
   $result =~ s/(%NAME%|\$name\b)/$iconName/g;
   $result =~ s/(%URL%|\$url\b)/$iconPath/g;
   $result =~ s/(%SIZE%|\$size\b)/$size/g;
+  $result =~ s/\$class\b/$class/g;
 
   print STDERR "MimeIconPlugin - extension=$extension, icon=$iconName, iconPath=$iconPath\n"
     if $Foswiki::cfg{Plugins}{MimeIconPlugin}{Debug};

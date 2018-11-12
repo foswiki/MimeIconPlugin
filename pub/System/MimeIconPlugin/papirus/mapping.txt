@@ -241,4 +241,4 @@ csv=x-office-spreadsheet.svg
 # xoj.svg
 deb=x-package-repository.svg
 
-unknown=unknown.svg
+unknown=empty.svg

@@ -47,7 +47,8 @@ The =get= endpoint allows to retrieve a proper icon for a given mime type or fil
 | *Parameter* | *Description* | *Default* |
 | =file= | file or file extension for which to retrieve a matching icon |  |
 | =size= | size of icon | 48 |
-| =theme= | icon set |  =$Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme}= |
+| =theme= | icon set | =$Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme}= |
+| =class= | css class(es) to be added to the icon in _addition_ to =foswikiIcon=, =&lt;iconName>= and =&lt;themeName>=   |  |
 
 Calling the =get= service will create a redirect to the proper icon url in a way that it can be used in an IMG html tag 
 
@@ -81,6 +82,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  12 Nov 2018: | (3.10) added =class= parameter |
 |  06 Nov 2018: | (3.00) added papirus icon set |
 |  16 Aug 2018: | (2.01) disabled error message writing to stderr |
 |  30 Aug 2017: | (2.00) added =get= REST handler |

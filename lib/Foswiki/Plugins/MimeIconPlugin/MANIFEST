@@ -2273,6 +2273,7 @@ pub/System/MimeIconPlugin/papirus/16x16/application-x-yaml.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/application-x-zerosize.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/audio-x-flac.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/audio-x-generic.svg 0644
+pub/System/MimeIconPlugin/papirus/16x16/empty.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/gnome-mime-application-x-referencer.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/image-svg+xml-compressed.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/image-x-generic.svg 0644
@@ -2385,6 +2386,7 @@ pub/System/MimeIconPlugin/papirus/22x22/application-x-yaml.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/application-x-zerosize.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/audio-x-flac.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/audio-x-generic.svg 0644
+pub/System/MimeIconPlugin/papirus/22x22/empty.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/gnome-mime-application-x-referencer.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/image-svg+xml-compressed.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/image-x-generic.svg 0644
@@ -2497,6 +2499,7 @@ pub/System/MimeIconPlugin/papirus/24x24/application-x-yaml.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/application-x-zerosize.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/audio-x-flac.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/audio-x-generic.svg 0644
+pub/System/MimeIconPlugin/papirus/24x24/empty.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/gnome-mime-application-x-referencer.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/image-svg+xml-compressed.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/image-x-generic.svg 0644
@@ -2609,6 +2612,7 @@ pub/System/MimeIconPlugin/papirus/32x32/application-x-yaml.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/application-x-zerosize.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/audio-x-flac.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/audio-x-generic.svg 0644
+pub/System/MimeIconPlugin/papirus/32x32/empty.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/gnome-mime-application-x-referencer.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/image-svg+xml-compressed.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/image-x-generic.svg 0644
@@ -2721,6 +2725,7 @@ pub/System/MimeIconPlugin/papirus/48x48/application-x-yaml.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/application-x-zerosize.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/audio-x-flac.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/audio-x-generic.svg 0644
+pub/System/MimeIconPlugin/papirus/48x48/empty.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/gnome-mime-application-x-referencer.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/image-svg+xml-compressed.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/image-x-generic.svg 0644
@@ -2833,6 +2838,7 @@ pub/System/MimeIconPlugin/papirus/64x64/application-x-yaml.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/application-x-zerosize.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/audio-x-flac.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/audio-x-generic.svg 0644
+pub/System/MimeIconPlugin/papirus/64x64/empty.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/gnome-mime-application-x-referencer.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/image-svg+xml-compressed.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/image-x-generic.svg 0644
