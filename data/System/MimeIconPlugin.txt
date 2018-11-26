@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1541516230" format="1.1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1543254682" format="1.1" version="1"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
@@ -82,6 +82,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  26 Nov 2018: | (3.11) docu fixes |
 |  12 Nov 2018: | (3.10) added =class= parameter |
 |  06 Nov 2018: | (3.00) added papirus icon set |
 |  16 Aug 2018: | (2.01) disabled error message writing to stderr |
@@ -101,6 +102,6 @@ redirects to
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25TOPIC%25"}%
 %META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
 %META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1541516230" size="41588" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1541516230" size="18836" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1541516230" size="12291" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1543254682" size="41588" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1543254682" size="18836" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1543254682" size="12291" user="ProjectContributor" version="1"}%

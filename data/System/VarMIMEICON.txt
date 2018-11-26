@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1541516230" format="1.1"  version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1543254682" format="1.1"  version="1"}%
 %META:TOPICPARENT{name="MimeIconPlugin"}%
 #VarMIMEICON
 ---+++ MIMEICON{"filename"} -- return a meaningful icon for this filename
@@ -8,7 +8,14 @@
      | ="filename"= | filenam or file extension to display an icon for | required |
      | =size="..."= | icon size; available sizes are depending on the icon set; common sizes are: 16, 32, 48, 64, 128 | 48; when the size isn't found in the icon set a best fitting size available will be chosen automatically |
      | =theme="oxygen,crystal,papirus"= | name of the icon set to chose from; for now only these two are supported | papirus or defined in =configure= |
-     | =format="..."= | format string for the img tag returned by this macro; within the format string the variables =%<nop>NAME%=, =%<nop>URL%= and =%<nop>SIZE%= are replaced with the concrete values for the icon being rendered | see =mimeicon.theme.tmpl= | 
+     | =class="..."= | css class to be applied to the img tag |
+     | =format="..."= | format string for the img tag ; | =&lt;img src='$url' class='$class' width='$size' height='$size' alt='$name' /&gt;= | 
+
+The format parameter may contain the following variables:
+   * =$name=: the name of the icon (alias: =%<nop>NAME%=)
+   * =$size=: the requested icon size (alias: =%<nop>URL%=) 
+   * =$url=: the url to the icon (alias: =%<nop>URL%=)
+   * =$class=: list of css classes applied to the img tag: =foswikiIcon=, the =$class= parameter as well as the theme name
 
 *Examples*:
 
