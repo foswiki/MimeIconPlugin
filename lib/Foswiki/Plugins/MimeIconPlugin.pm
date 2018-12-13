@@ -26,8 +26,8 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '3.11';
-our $RELEASE = '26 Nov 2018';
+our $VERSION = '3.12';
+our $RELEASE = '13 Dec 2018';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
 our $NO_PREFS_IN_TOPIC = 1;
 our $baseWeb;

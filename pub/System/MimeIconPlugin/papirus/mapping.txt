@@ -6,8 +6,12 @@ json=application-json.svg
 pdf=application-pdf.svg
 pgp=application-pgp-encrypted.svg
 # application-pgp-keys.svg
+key=application-pkix-cert.svg
+pub=application-pkix-cert.svg
+rsa=application-pkix-cert.svg
 cert=application-pkix-cert.svg
 cer=application-pkix-cert.svg
+crt=application-pkix-cert.svg
 pkg=application-vnd.android.package-archive.svg
 # application-vnd.comicbook+zip.svg
 flatpack=application-vnd.flatpak.svg
@@ -222,10 +226,17 @@ icz=x-office-calendar.svg
 
 doc=x-office-document.svg
 docx=x-office-document.svg
+dotx=x-office-document.svg
+dot=x-office-document.svg
+dotm=x-office-document.svg
 odt=x-office-document.svg
 dot=x-office-document.svg
 rtf=x-office-document.svg
-pttx=x-office-presentation.svg
+
+pot=x-office-presentation.svg
+potx=x-office-presentation.svg
+potm=x-office-presentation.svg
+pptx=x-office-presentation.svg
 pttm=x-office-presentation.svg
 odp=x-office-presentation.svg
 otp=x-office-presentation.svg
@@ -234,6 +245,7 @@ pptx=x-office-presentation.svg
 ods=x-office-spreadsheet.svg
 ots=x-office-spreadsheet.svg
 xls=x-office-spreadsheet.svg
+xlsm=x-office-spreadsheet.svg
 xlsx=x-office-spreadsheet.svg
 xltx=x-office-spreadsheet.svg
 csv=x-office-spreadsheet.svg

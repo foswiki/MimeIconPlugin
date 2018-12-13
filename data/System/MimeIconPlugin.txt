@@ -82,6 +82,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  13 Dec 2018: | (3.12) added more mappings for office file types |
 |  26 Nov 2018: | (3.11) docu fixes |
 |  12 Nov 2018: | (3.10) added =class= parameter |
 |  06 Nov 2018: | (3.00) added papirus icon set |
