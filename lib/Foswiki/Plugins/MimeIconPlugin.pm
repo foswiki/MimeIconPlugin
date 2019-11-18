@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# MimeIconPlugin is Copyright (C) 2010-2018 Michael Daum http://michaeldaumconsulting.com
+# MimeIconPlugin is Copyright (C) 2010-2019 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -26,8 +26,8 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '3.12';
-our $RELEASE = '13 Dec 2018';
+our $VERSION = '3.13';
+our $RELEASE = '18 Nov 2019';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
 our $NO_PREFS_IN_TOPIC = 1;
 our $baseWeb;
@@ -53,7 +53,6 @@ sub initPlugin {
     http_allow => 'GET,POST',
   );
 
-
   return 1;
 }
 
@@ -66,7 +65,7 @@ returns the url to a mime icon
 =cut
 
 sub handleREST {
-  my ($subject, $verb, $response) = @_;
+  my ($session, $subject, $verb, $response) = @_;
 
   my $query = Foswiki::Func::getCgiQuery();
   my $file = $query->param("file") || '';
@@ -77,14 +76,14 @@ sub handleREST {
   my $size = $query->param("size") || '48';
   my $theme = $query->param("theme");
 
-  $theme = $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'oxygen'
+  $theme = $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'papirus'
     unless defined $theme;
 
   $size = getBestSize($theme, $size);
 
-  my (undef, $iconPath) = getIcon($file, $theme, $size); 
+  my (undef, $iconPath) = getIcon($file, $theme, $size);
 
-  $response->header(-cache_control => "max-age=".(8 * 60 * 60)); # 8 hours in seconds
+  $response->header(-cache_control => "max-age=" . (8 * 60 * 60));    # 8 hours in seconds
   Foswiki::Func::redirectCgiQuery($query, $iconPath);
 
   return "";
@@ -110,17 +109,16 @@ sub MIMEICON {
   $format = "<img src='\$url' class='\$class' width='\$size' height='\$size' alt='\$name' />"
     unless defined $format;
 
-  $theme = $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'oxygen'
+  $theme = $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'papirus'
     unless defined $theme;
-
 
   $extension =~ s/^.*\.//;
   $extension =~ s/^\s+|\s+$//g;
 
   my $bestSize = getBestSize($theme, $size);
-  my ($iconName, $iconPath) = getIcon($extension, $theme, $bestSize); 
+  my ($iconName, $iconPath) = getIcon($extension, $theme, $bestSize);
 
-  $size = $cache{$theme.':scalable'}?$size:$bestSize;
+  $size = $cache{$theme . ':scalable'} ? $size : $bestSize;
 
   return "<span class='foswikiAlert'>Error: can't even find a fallback mime-icon</span>"
     unless defined $iconName;
@@ -158,11 +156,13 @@ returns the name and path of an icon given an extension.
 sub getIcon {
   my ($extension, $theme, $size, $fromFallback) = @_;
 
-  readIconMapping($theme) 
-    unless defined $cache{$theme.':sizes'};
+  $theme ||= $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'papirus';
 
-  my $iconName = $cache{ $theme . ':' . $extension };
-  my $iconPath = $cache{ $theme . ':' . $extension . ':' . $size };
+  readIconMapping($theme)
+    unless defined $cache{$theme . ':sizes'};
+
+  my $iconName = $cache{$theme . ':' . $extension};
+  my $iconPath = $cache{$theme . ':' . $extension . ':' . $size};
 
   return ($iconName, $iconPath) if defined $iconName && defined $iconPath;
 
@@ -193,7 +193,7 @@ sub getIcon {
 
     # fallback to lower size
     my $state = 0;
-    foreach my $s (@{ $cache{ $theme . ':sizes' } }) {
+    foreach my $s (@{$cache{$theme . ':sizes'}}) {
       print STDERR "MimeIconPlugin - ... checking $s\n"
         if $Foswiki::cfg{Plugins}{MimeIconPlugin}{Debug};
       if ($state == 0) {
@@ -224,7 +224,7 @@ sub getIcon {
 
   # caching
   $extension = $fromFallback if defined $fromFallback;
-  $cache{ $theme . ':' . $extension . ':' . $size } = $iconPath;
+  $cache{$theme . ':' . $extension . ':' . $size} = $iconPath;
 
   return ($iconName, $iconPath);
 }
@@ -240,15 +240,15 @@ returns the closest icon size available for a theme
 sub getBestSize {
   my ($theme, $size) = @_;
 
-  readIconMapping($theme) 
-    unless defined $cache{$theme.':sizes'};
+  readIconMapping($theme)
+    unless defined $cache{$theme . ':sizes'};
 
-  if (defined $cache{$theme.':knownsizes'}{$size}) {
+  if (defined $cache{$theme . ':knownsizes'}{$size}) {
     return $size;
   } else {
     my $bestSize = 16;
-    foreach my $s (@{$cache{$theme.':sizes'}}) {
-      if($size >= $s) {
+    foreach my $s (@{$cache{$theme . ':sizes'}}) {
+      if ($size >= $s) {
         $bestSize = $s;
         last;
       }
@@ -265,13 +265,12 @@ sub getBestSize {
 =cut
 
 sub finishPlugin {
-  
+
   my $keep = $Foswiki::cfg{Plugins}{MimeIconPlugin}{MemoryCache};
   $keep = 1 unless defined $keep;
 
   undef %cache unless $keep;
 }
-
 
 =begin TML
 
@@ -283,12 +282,12 @@ sub readIconMapping {
   my ($theme) = shift;
 
   print STDERR "MimeIconPlugin - readIconMapping($theme)\n"
-        if $Foswiki::cfg{Plugins}{MimeIconPlugin}{Debug};
+    if $Foswiki::cfg{Plugins}{MimeIconPlugin}{Debug};
 
-  my $mappingFile = $Foswiki::cfg{PubDir}.'/'.$Foswiki::cfg{SystemWebName}.'/MimeIconPlugin/'.$theme.'/mapping.txt';
+  my $mappingFile = $Foswiki::cfg{PubDir} . '/' . $Foswiki::cfg{SystemWebName} . '/MimeIconPlugin/' . $theme . '/mapping.txt';
 
   my $IN_FILE;
-  open( $IN_FILE, '<', $mappingFile ) || return '';
+  open($IN_FILE, '<', $mappingFile) || return '';
 
   foreach my $line (<$IN_FILE>) {
     $line =~ s/#.*$//;
@@ -299,20 +298,19 @@ sub readIconMapping {
       my $key = $1;
       my $val = $2;
 
-
       if ($key eq 'scalable') {
-        $cache{$theme.':scalable'} = Foswiki::Func::isTrue($val);
+        $cache{$theme . ':scalable'} = Foswiki::Func::isTrue($val);
       } elsif ($key eq 'sizes') {
-        $cache{$theme.':sizes'} = [ reverse split(/\s*,\s*/, $val)];
+        $cache{$theme . ':sizes'} = [reverse split(/\s*,\s*/, $val)];
       } else {
-        $cache{$theme.':'.$key} = $val;
+        $cache{$theme . ':' . $key} = $val;
       }
     }
   }
   close($IN_FILE);
 
-  $cache{$theme.':sizes'} = ['16'] unless defined $cache{$theme.':sizes'};
-  %{$cache{$theme.':knownsizes'}} = map {$_ => 1} @{$cache{$theme.':sizes'}};
+  $cache{$theme . ':sizes'} = ['16'] unless defined $cache{$theme . ':sizes'};
+  %{$cache{$theme . ':knownsizes'}} = map { $_ => 1 } @{$cache{$theme . ':sizes'}};
 }
 
 1;

@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1543254682" format="1.1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1574085456" format="1.1" version="1"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
@@ -82,6 +82,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  18 Nov 2019: | (3.13) default to papirus icon set |
 |  13 Dec 2018: | (3.12) added more mappings for office file types |
 |  26 Nov 2018: | (3.11) docu fixes |
 |  12 Nov 2018: | (3.10) added =class= parameter |
@@ -95,7 +96,7 @@ redirects to
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
-%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2018 Michael Daum http://michaeldaumconsulting.com"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2019 Michael Daum http://michaeldaumconsulting.com"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
@@ -103,6 +104,6 @@ redirects to
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25TOPIC%25"}%
 %META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
 %META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1543254682" size="41588" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1543254682" size="18836" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1543254682" size="12291" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1574085456" size="41588" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1574085456" size="18836" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1574085456" size="12291" user="ProjectContributor" version="1"}%
