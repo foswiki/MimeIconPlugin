@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# MimeIconPlugin is Copyright (C) 2010-2019 Michael Daum http://michaeldaumconsulting.com
+# MimeIconPlugin is Copyright (C) 2010-2020 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -26,12 +26,10 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '3.13';
-our $RELEASE = '18 Nov 2019';
+our $VERSION = '4.00';
+our $RELEASE = '26 Oct 2020';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
 our $NO_PREFS_IN_TOPIC = 1;
-our $baseWeb;
-our $baseTopic;
 our %cache = ();
 
 =begin TML
@@ -41,7 +39,6 @@ our %cache = ();
 =cut
 
 sub initPlugin {
-  ($baseTopic, $baseWeb) = @_;
 
   Foswiki::Func::registerTagHandler('MIMEICON', \&MIMEICON);
 
@@ -158,8 +155,7 @@ sub getIcon {
 
   $theme ||= $Foswiki::cfg{Plugins}{MimeIconPlugin}{Theme} || 'papirus';
 
-  readIconMapping($theme)
-    unless defined $cache{$theme . ':sizes'};
+  readIconMapping($theme);
 
   my $iconName = $cache{$theme . ':' . $extension};
   my $iconPath = $cache{$theme . ':' . $extension . ':' . $size};
@@ -240,8 +236,7 @@ returns the closest icon size available for a theme
 sub getBestSize {
   my ($theme, $size) = @_;
 
-  readIconMapping($theme)
-    unless defined $cache{$theme . ':sizes'};
+  readIconMapping($theme);
 
   if (defined $cache{$theme . ':knownsizes'}{$size}) {
     return $size;
@@ -280,6 +275,8 @@ sub finishPlugin {
 
 sub readIconMapping {
   my ($theme) = shift;
+
+  return if defined $cache{$theme . ':sizes'};
 
   print STDERR "MimeIconPlugin - readIconMapping($theme)\n"
     if $Foswiki::cfg{Plugins}{MimeIconPlugin}{Debug};

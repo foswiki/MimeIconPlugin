@@ -36,6 +36,7 @@ gz=application-x-compress.svg
 rar=application-x-compress.svg
 tar=application-x-compress.svg
 tgz=application-x-compress.svg
+xz=application-x-compress.svg
 zip=application-x-compress.svg
 
 # application-x-designer.svg
@@ -44,6 +45,7 @@ epub=application-x-fictionbook.svg
 mobi=application-x-fictionbook.svg
 oebps=application-x-fictionbook.svg
 ttf=application-x-font-ttf.svg
+woff=application-font-woff.svg
 # application-x-fusioncomp.svg
 # application-x-gettext-translation.svg
 # application-x-ipynb+json.svg
@@ -145,6 +147,7 @@ xcf=image-x-generic.svg
 xcf=image-x-xcf.svg
 xpm=image-x-generic.svg
 xwd=image-x-generic.svg
+ps=application-postscript.svg
 
 # playlist.svg
 # qgis-qgs.svg
@@ -250,7 +253,5 @@ xlsx=x-office-spreadsheet.svg
 xltx=x-office-spreadsheet.svg
 csv=x-office-spreadsheet.svg
 
-# xoj.svg
 deb=x-package-repository.svg
-
 unknown=empty.svg

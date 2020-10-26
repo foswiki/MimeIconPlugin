@@ -1,0 +1,8 @@
+THIS_DIR=$(shell pwd|xargs basename)
+SOURCE_DIR=../git/Papirus/${THIS_DIR}/mimetypes
+TARGET=$(shell grep = ../mapping.txt | grep -v '^\#' | grep -v '^sizes='|grep -v '^scalable='| awk -F= '{print $$2}'|sort -u)
+
+all: $(TARGET)
+
+%: ${SOURCE_DIR}/%
+	@cp -v $< .
