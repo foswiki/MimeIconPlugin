@@ -249,9 +249,15 @@ ods=x-office-spreadsheet.svg
 ots=x-office-spreadsheet.svg
 xls=x-office-spreadsheet.svg
 xlsm=x-office-spreadsheet.svg
+xltm=x-office-spreadsheet.svg
 xlsx=x-office-spreadsheet.svg
 xltx=x-office-spreadsheet.svg
 csv=x-office-spreadsheet.svg
+
+vsd=application-vnd.visio.svg
+vst=application-vnd.visio.svg
+vsw=application-vnd.visio.svg
+vss=application-vnd.visio.svg
 
 deb=x-package-repository.svg
 unknown=empty.svg

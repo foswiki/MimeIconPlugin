@@ -82,6 +82,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  04 May 2022: | (4.10) added visio icon |
 |  26 Oct 2020: | (4.00) updated papirus icon set |
 |  18 Nov 2019: | (3.13) default to papirus icon set |
 |  13 Dec 2018: | (3.12) added more mappings for office file types |
@@ -97,7 +98,7 @@ redirects to
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
-%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2020 Michael Daum"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2022 Michael Daum"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%

@@ -4,5 +4,8 @@ TARGET=$(shell grep = ../mapping.txt | grep -v '^\#' | grep -v '^sizes='|grep -v
 
 all: $(TARGET)
 
+debug:
+	@echo $(TARGET)
+
 %: ${SOURCE_DIR}/%
 	@cp -v $< .

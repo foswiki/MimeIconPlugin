@@ -2232,6 +2232,7 @@ pub/System/MimeIconPlugin/papirus/16x16/application-vnd.google-apps.script.svg 0
 pub/System/MimeIconPlugin/papirus/16x16/application-vnd.oasis.opendocument.database.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/application-vnd.oasis.opendocument.formula.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/application-vnd.oasis.opendocument.graphics.svg 0644
+pub/System/MimeIconPlugin/papirus/16x16/application-vnd.visio.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/application-vnd.wolfram.cdf.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/application-vnd.wolfram.mathematica.package.svg 0644
 pub/System/MimeIconPlugin/papirus/16x16/application-vnd.wolfram.nb.svg 0644
@@ -2348,6 +2349,7 @@ pub/System/MimeIconPlugin/papirus/22x22/application-vnd.google-apps.script.svg 0
 pub/System/MimeIconPlugin/papirus/22x22/application-vnd.oasis.opendocument.database.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/application-vnd.oasis.opendocument.formula.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/application-vnd.oasis.opendocument.graphics.svg 0644
+pub/System/MimeIconPlugin/papirus/22x22/application-vnd.visio.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/application-vnd.wolfram.cdf.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/application-vnd.wolfram.mathematica.package.svg 0644
 pub/System/MimeIconPlugin/papirus/22x22/application-vnd.wolfram.nb.svg 0644
@@ -2464,6 +2466,7 @@ pub/System/MimeIconPlugin/papirus/24x24/application-vnd.google-apps.script.svg 0
 pub/System/MimeIconPlugin/papirus/24x24/application-vnd.oasis.opendocument.database.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/application-vnd.oasis.opendocument.formula.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/application-vnd.oasis.opendocument.graphics.svg 0644
+pub/System/MimeIconPlugin/papirus/24x24/application-vnd.visio.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/application-vnd.wolfram.cdf.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/application-vnd.wolfram.mathematica.package.svg 0644
 pub/System/MimeIconPlugin/papirus/24x24/application-vnd.wolfram.nb.svg 0644
@@ -2580,6 +2583,7 @@ pub/System/MimeIconPlugin/papirus/32x32/application-vnd.google-apps.script.svg 0
 pub/System/MimeIconPlugin/papirus/32x32/application-vnd.oasis.opendocument.database.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/application-vnd.oasis.opendocument.formula.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/application-vnd.oasis.opendocument.graphics.svg 0644
+pub/System/MimeIconPlugin/papirus/32x32/application-vnd.visio.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/application-vnd.wolfram.cdf.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/application-vnd.wolfram.mathematica.package.svg 0644
 pub/System/MimeIconPlugin/papirus/32x32/application-vnd.wolfram.nb.svg 0644
@@ -2696,6 +2700,7 @@ pub/System/MimeIconPlugin/papirus/48x48/application-vnd.google-apps.script.svg 0
 pub/System/MimeIconPlugin/papirus/48x48/application-vnd.oasis.opendocument.database.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/application-vnd.oasis.opendocument.formula.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/application-vnd.oasis.opendocument.graphics.svg 0644
+pub/System/MimeIconPlugin/papirus/48x48/application-vnd.visio.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/application-vnd.wolfram.cdf.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/application-vnd.wolfram.mathematica.package.svg 0644
 pub/System/MimeIconPlugin/papirus/48x48/application-vnd.wolfram.nb.svg 0644
@@ -2812,6 +2817,7 @@ pub/System/MimeIconPlugin/papirus/64x64/application-vnd.google-apps.script.svg 0
 pub/System/MimeIconPlugin/papirus/64x64/application-vnd.oasis.opendocument.database.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/application-vnd.oasis.opendocument.formula.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/application-vnd.oasis.opendocument.graphics.svg 0644
+pub/System/MimeIconPlugin/papirus/64x64/application-vnd.visio.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/application-vnd.wolfram.cdf.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/application-vnd.wolfram.mathematica.package.svg 0644
 pub/System/MimeIconPlugin/papirus/64x64/application-vnd.wolfram.nb.svg 0644
