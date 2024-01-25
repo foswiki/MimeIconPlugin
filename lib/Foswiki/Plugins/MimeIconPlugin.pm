@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# MimeIconPlugin is Copyright (C) 2010-2022 Michael Daum http://michaeldaumconsulting.com
+# MimeIconPlugin is Copyright (C) 2010-2024 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -26,9 +26,10 @@ use warnings;
 
 use Foswiki::Func ();
 
-our $VERSION = '4.10';
-our $RELEASE = '04 May 2022';
+our $VERSION = '4.11';
+our $RELEASE = '%$RELEASE%';
 our $SHORTDESCRIPTION = 'Icon sets for mimetypes';
+our $LICENSECODE = '%$LICENSECODE%';
 our $NO_PREFS_IN_TOPIC = 1;
 our %cache = ();
 
@@ -286,7 +287,7 @@ sub readIconMapping {
   my $IN_FILE;
   open($IN_FILE, '<', $mappingFile) || return '';
 
-  foreach my $line (<$IN_FILE>) {
+  while (my $line = <$IN_FILE>) {
     $line =~ s/#.*$//;
     $line =~ s/^\s+|\s+$//g;
     next if $line =~ /^$/;

@@ -3,8 +3,6 @@ sizes=16, 22, 32, 48, 64, 128, 256
 ill=application-illustrator.png
 js=application-javascript.png
 json=application-javascript.png
-doc=application-msword.png
-dot=application-msword.png
 bin=application-octet-stream.png
 pdf=application-pdf.png
 # =application-pgp-encrypted.png
@@ -23,14 +21,23 @@ epub=application-epub+zip.png
 mobi=application-epub+zip.png
 
 # ms-office
-sxw=application-sxw.png
+doc=application-msword.png
+docm=application-msword.png
+dot=application-msword.png
+dotm=application-msword.png
 mdb=application-vnd.ms-access.png
-xls=application-vnd.ms-excel.png
-xlt=application-vnd.ms-excel.png
-xlb=application-vnd.ms-excel.png
-ppt=application-vnd.ms-powerpoint.png
 pps=application-vnd.ms-powerpoint.png
+ppsm=application-vnd.ms-powerpoint.png
+ppt=application-vnd.ms-powerpoint.png
+pptm=application-vnd.ms-powerpoint.png
+pot=application-vnd.ms-powerpoint.png
+potm=application-vnd.ms-powerpoint.png
+sxw=application-sxw.png
 vsd=application-vnd.ms-access.png
+xlb=application-vnd.ms-excel.png
+xls=application-vnd.ms-excel.png
+xlsm=application-vnd.ms-excel.png
+xlt=application-vnd.ms-excel.png
 
 # opendocument
 odc=application-vnd.oasis.opendocument.chart.png
