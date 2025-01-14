@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="" date="1574085456" format="1.1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1736875104" format="1.1" version="1"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
@@ -82,6 +82,7 @@ redirects to
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
+|  14 Jan 2025: | (4.20) updated papirus icons |
 |  25 Jan 2024: | (4.11) more mappings for microsoft document types |
 |  04 May 2022: | (4.10) added visio icon |
 |  26 Oct 2020: | (4.00) updated papirus icon set |
@@ -99,7 +100,7 @@ redirects to
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
-%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2024 Michael Daum"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2010-2025 Michael Daum"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
@@ -107,6 +108,6 @@ redirects to
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25TOPIC%25"}%
 %META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
 %META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1574085456" size="41588" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1574085456" size="18836" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1574085456" size="12291" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap2.png" attachment="MimeIconPluginSnap2.png" attr="" comment="" date="1736875104" size="41588" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap1.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1736875104" size="18836" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="MimeIconPluginSnap3.png" attachment="MimeIconPluginSnap3.png" attr="" comment="" date="1736875104" size="12291" user="ProjectContributor" version="1"}%
